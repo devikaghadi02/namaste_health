@@ -1,0 +1,76 @@
+@use '../base/index';
+@use "../util/index";
+
+.navbar {
+    background: index.$Dark-Green15;
+    --bs-navbar-padding-y: 16px;
+}
+
+.navbar-brand {
+    width: 134px;
+    overflow: hidden;
+}
+
+.nav_button a {
+    width: 101px;
+    height: 45px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: index.$Green70;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: index.$Urbanist;
+    color: index.$Grey15;
+    transition: all linear .3s;
+}
+
+.nav_button a:hover {
+    background: index.$Green97;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    gap: 30px;
+}
+
+.main_menu {
+    ul {
+        li {
+            a {
+                font-size: 14px;
+                font-weight: 600;
+                font-family: index.$Urbanist;
+                color: index.$Green97 !important;
+                transition: all linear .3s;
+            }
+
+            a:hover {
+                color: index.$Green70 !important;
+            }
+
+            .active_menu {
+                color: index.$Green70 !important;
+            }
+        }
+    }
+}
+
+.menu_fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    animation: menu_fixed linear .6s;
+}
+
+@keyframes menu_fixed {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0;
+    }
+}

@@ -1,0 +1,16 @@
+@use 'index';
+@use '../util/index';
+
+.common_section_head {
+    h2 {
+        @include index.section_head;
+    }
+
+    p {
+        width: 780px;
+        @include index.paragraph;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+}

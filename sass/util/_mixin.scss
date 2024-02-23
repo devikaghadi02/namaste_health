@@ -1,0 +1,16 @@
+@mixin paragraph {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: index.$Urbanist;
+    color: index.$Grey20;
+}
+
+@mixin section_head {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: index.$Urbanist;
+    color: index.$Grey15;
+    margin-bottom: 6px;
+    text-align: center
+}

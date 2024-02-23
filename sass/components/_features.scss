@@ -1,0 +1,37 @@
+@use '../base/index';
+@use '../util/index';
+
+#features {
+    padding-top: 100px;
+}
+
+.features_card {
+    padding: 40px;
+    background: index.$Green95;
+    border: 1px solid index.$Green85;
+    border-radius: 10px;
+}
+
+.features_card_head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_head_icon {
+    padding: 12px;
+    background: index.$Green70;
+    border-radius: 6px;
+}
+
+.card_head_text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: index.$Urbanist;
+    color: index.$Grey15;
+}
+
+.card_para p {
+    margin-top: 20px;
+    @include index.paragraph;
+}

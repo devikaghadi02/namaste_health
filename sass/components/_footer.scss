@@ -1,0 +1,89 @@
+@use "../util/index";
+
+#footer {
+    padding: 40px 0;
+    background: index.$Dark-Green20;
+}
+
+.logo_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .footer_logo {
+        width: 130px;
+        overflow: hidden;
+    }
+
+    .footer_menu {
+        ul {
+            display: flex;
+            gap: 16px;
+
+            li {
+                a {
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: index.$Urbanist;
+                    color: #fff;
+                    transition: all linear .3s;
+                }
+
+                a:hover {
+                    color: index.$Green70;
+                }
+            }
+        }
+
+    }
+
+    .back_top {
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: index.$Urbanist;
+            color: #fff;
+        }
+    }
+}
+.footer_contact{
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: index.$Dark-Green25;
+    border: 1px solid index.$Dark-Green30;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .footer_address{
+        display: flex;
+        flex-wrap: wrap;
+        gap:16px;
+        .address_item{
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid index.$Dark-Green30;
+            display: flex;
+            gap: 6px;
+            .address_icon{
+                i{
+                    color: index.$Green70;
+                }
+            }
+            .address_link a{
+               @include index.paragraph;
+                color: #fff;
+            }
+        }
+    } 
+}
+.copyright_text p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: index.$Urbanist;
+    color: index.$Grey95;
+}
+
